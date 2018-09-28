@@ -96,13 +96,14 @@
     <script>
         function sendData() {
             var jsonData = jsonForm(document.getElementById('form'));
-            SendToServer(jsonData, 'GOVERNMENT'); // Your Contact Unit
+            /* Replace CONTACT by your Unit Name */
+            SendToServer(jsonData, 'CONTACT'); 
             document.getElementById('datos').innerHTML += 
                 '<pre>'  + jsonData + '</pre><br>';            
         }
 
         function jsonForm(form) {  
-            // var objects = [];  
+            /* var objects = []; */ 
             var jsonString = "{data[{";
             if (typeof form == 'object' && form.nodeName.toLowerCase() == "form") {  
                 var fields = form.getElementsByTagName("input");  
