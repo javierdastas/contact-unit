@@ -11,7 +11,7 @@ This is why the integration of multiple programming languages ​​such as C++,
 There are technologies defined for particular developments. But the greatest benefit of technology is in the development of Open Information Systems. Contact was developed thinking about solving perhaps the biggest problem in a natural disaster, the lack of services that allow communication. 
 Contact offers an embedded application to allow communication. But contact is not just an application and a communication device, it is a platform that allows increasing the support of communications between people in need and the rest of the planet. Contact allows to develop and integrate other interfaces for data capture in a simple way using technologies similar to RESTful or HTML injection
 
-![Contact Platform](/Platform/images/contact-architecture.png)
+![Contact Platform](/images/contact-architecture.png)
 
 
 The Contact code is divided into two layers. 
@@ -26,11 +26,11 @@ alt="Contact Video" width="100" height="auto" border="10" /><p>&nbsp;Click here 
 ## Contact Architecture
 The main functionality of Contact is the ability to communicate between different devices. Contact uses WiFi communication to receive the data that it wants to transmit and in turn so that the user can request the data. The Contact code allows each unit to work as a Hotspot and Web Server at the same time. Through the Web Server in Contact the user can access different functions, such as a chat for communication between the Contact units, configuration screens for the units and screens that allow reading data sent through the Contact units and sending that data to other networks or the Internet.
 
-![Contact Detail Architecture](/Platform/images/contact-how-work.png)
+![Contact Detail Architecture](/images/contact-how-work.png)
 
 The contact functions are due to the understanding of many disciplines in technology related to hardware, software and communications. The following image presents in greater detail how the elements integrated in contact work.
 
-![Contact Detail Architecture](/Platform/images/contact-detail-architecture.png)
+![Contact Detail Architecture](/images/contact-detail-architecture.png)
 
 The orchestration of all this technology allows it to be simple in its use and implementation, besides offering the opportunity to grow as a platform.
 
@@ -175,7 +175,7 @@ Another very important option is the ability to forward messages to other units.
          
 ```
 [Click here to view the complete Code](
-https://github.com/Contact-Platform/Contact/blob/master/Platform/device/device.ino "Unit Code")
+https://github.com/Contact-Platform/Contact/blob/master/device/device.ino "Unit Code")
 
 ## Contact's Front-end - Embedded Application Code
 Is important remember that the Contact's Front-end interfaces are web pages, those codes are integrated with the Contact Back-end code. For that reason, every time you modify the Font-end code *you need to merge the code with the Back-end code* to get the results on the Contact's user web interface.
@@ -184,17 +184,17 @@ Is important remember that the Contact's Front-end interfaces are web pages, tho
 
 The main screen of the web application integrated in the Contact web server allows users to send messages to the other units. The code also asks the unit, at intervals of time, for the information that the unit has received. Another function that allows is to send the messages written by the user. Also, to send messages requesting help, in time intervals. This happens when the beacon option is active. It also sends certain time intervals information related to the unit, this allows the other units to know what units are available to make contact. 
 
-[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/Platform/interfaces/main/main-screen.html "Main Screen Code")
+[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/interfaces/main/main-screen.html "Main Screen Code")
 
 The code was written in HTML, Javascript and CSS.
 
-![Selecting Locations to communicate](/Platform/images/msg-units-selection.png)
+![Selecting Locations to communicate](/images/msg-units-selection.png)
 *Selecting Online Locations to Send Messages*
 
-![Main Screen](/Platform/images/main-interface.png)
+![Main Screen](/images/main-interface.png)
 *Main Options and Interaction*
 
-![Sending Messages](/Platform/images/main-interface-use.png)
+![Sending Messages](/images/main-interface-use.png)
 
 *Sending a Message to selected Online Locations*
 
@@ -233,7 +233,7 @@ String geoLocation() {
 
 #### <a href='https://youtu.be/3B9AbOJu10c' target='_blank' alt='Beacon Demo'>Click here to see a demo video using the Beacon option.</a>
 
-![Beacon Screen](/Platform/images/beacon-option.png)
+![Beacon Screen](/images/beacon-option.png)
 
 
 ### Setup Interface
@@ -314,27 +314,27 @@ The interface is divided into two parts to specify data. The first allows you to
 
 The second part of the data allows you to specify that the unit connect to another network to read all the data sent to any unit and send them to another network, the Internet or another platform.
 
-![Contact Setup Screen](/Platform/images/setup.png)
+![Contact Setup Screen](/images/setup.png)
 
 The code was written in HTML, Javascript and CSS.
 
-[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/Platform/setup/unit-setting.html "Setup Screen Code")
+[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/setup/unit-setting.html "Setup Screen Code")
 
 ### Gateway Interface
 
 This interface allows the unit that has been configured as a Gateway to receive all the data sent between the Units in their range and send these to an external platform in a network or through the Internet. The code will read in time intervals the data received in the Gateway Unit and send them to the address indicated in the Setup screen.
 
-![Gateway Confirmation Screen](/Platform/images/gateway.png)
+![Gateway Confirmation Screen](/images/gateway.png)
 
 The code was written in HTML, Javascript and CSS.
 
-[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/Platform/interfaces/gateway/pushsms.html "Setup Screen Code")
+[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/interfaces/gateway/pushsms.html "Setup Screen Code")
 
 ### Data Form - Customized Interface
 
 This code is an example of the capabilities of the Contact Platform. The example demonstrates how an external interface can be developed to send data through the Contact Platform.
 
-![Other Data Form Screen](/Platform/images/data-form.png)
+![Other Data Form Screen](/images/data-form.png)
 
 
 It is important that the code indicates to which unit you want to send the data, which can be a Contact Gateway.
@@ -350,7 +350,7 @@ It is important that the code indicates to which unit you want to send the data,
 
 The code was written in HTML, Javascript and CSS. 
 
-[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/Platform/interfaces/other-data-example/form-data.html "Data Form Code")
+[Click here to view the Code](https://github.com/Contact-Platform/Contact/blob/master/interfaces/other-data-example/form-data.html "Data Form Code")
 
-[Hardware Code]: https://github.com/Contact-Platform/Contact/blob/master/Platform/device/device.ino "Contact Main Code"
+[Hardware Code]: https://github.com/Contact-Platform/Contact/blob/master/device/device.ino "Contact Main Code"
 
